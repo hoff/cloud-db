@@ -1,0 +1,19 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+# python libraries provided by appengine
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
+
+handlers:
+# rest api
+- url: /api/.*
+  script: backend.app
+  secure: always
+- url: /
+  script: backend.app
+  secure: always
