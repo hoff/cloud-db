@@ -49,7 +49,7 @@ def allow_cors(request):
     request.response.headers['Access-Control-Allow-Credentials'] = 'true'
     request.response.headers['Access-Control-Allow-Origin'] = '*'
     request.response.headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept'
-    request.response.headers['Access-Control-Allow-Methods'] = 'PUT, GET, POST, DELETE'
+    request.response.headers['Access-Control-Allow-Methods'] = 'PUT, GET, POST, DELETE, OPTIONS'
 
 
 def return_json(handler, data):
